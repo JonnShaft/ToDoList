@@ -5,10 +5,15 @@ RSpec.describe TasksController, type: :controller do
 		it "should list the tasks in the database" do
 			task1 = FactoryGirl.create(:task)	#Create items in DB.
 			task2 = FactoryGirl.create(:task)
+			task1.update_attributes(title: "Something else")	#Update first task after the second is built in.
 			get :index	#Trigger the index action.
 			expect(response).to have_http_status :success  #HTTP request should be successful.
 			response_value = ActiveSupport::JSON.decode(@response.body)	#Access the actual response from the app.
 			expect(response_value.count).to eq(2)	#Text in JSON should be produced.
+			response_ids = response_value.collect do |task|	#Loop through each item and extract the id.
+				task["id"]
+			end
+			expect(response_ids).to eq([task1.id, task2.id])	#Items should be returned in the order that they were created.
 		end
 	end
 
