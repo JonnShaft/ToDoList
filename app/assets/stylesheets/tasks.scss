@@ -33,10 +33,11 @@ body {
   color: #4d4d4d;
   min-width: 230px;
   max-width: 1800px;
-  margin: 1o0px;
+  margin: 10px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
+  background: url('/assets/old_map.png')
 }
 
 button,
@@ -50,7 +51,7 @@ input[type="checkbox"] {
 
 .todoapp {
   background: #fff;
-  margin: 130px 0 0px 0;
+  margin: 200px auto;
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
               0 25px 50px 0 rgba(0, 0, 0, 0.1);
@@ -64,7 +65,7 @@ input[type="checkbox"] {
 
 .todoapp input::-moz-placeholder {
   font-style: italic;
-  font-weight: 300;
+  font-weight: 800;
   color: #e6e6e6;
 }
 
