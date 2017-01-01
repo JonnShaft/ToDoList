@@ -1,9 +1,5 @@
 class TasksController < ApplicationController
 	
-	before_action :require_user, only: [:index, :show]
-	helper_method :current_user
-	
-	
 	def index
 		render json: Task.order(:id)
 	end

@@ -1,8 +1,5 @@
 class SessionsController < ApplicationController
   
-  before_action :require_user, only: [:index, :show]
-  helper_method :current_user
-  
   def new
   end
   
