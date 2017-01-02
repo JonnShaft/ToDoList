@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Todolist</title>
-    <%= csrf_meta_tags %>
-    <meta name="viewport" content="width=device-width, height=device-height">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
-
+<head>
+  <title>Todolist</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, height=device-height">
   
-    <%= yield %>
-  </body>
+</head>
+
+<body>
+  
+  
+  <%= yield %>
+</body>
 </html>
