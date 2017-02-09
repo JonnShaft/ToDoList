@@ -1,24 +1,18 @@
-# README
+# Todo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Written mainly in JavaScript and also utilizes Ruby and jQuery.
 
-Things you may want to cover:
+My ToDoList is a todo mvc that lets users keep track of their todos. Check it out [here](https://todolist-the-jamals.herokuapp.com/). Sign up and keep track of your long list of things to get done!
 
-* Ruby version
+### Features: 
 
-* System dependencies
+* Users can keep track of their todos easily.
 
-* Configuration
+* Uses Twitter Bootstrap 3 for CSS and components.
 
-* Database creation
+* Uses Devise for user forms and security.
 
-* Database initialization
+* jQuery lets users do check toggling.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+###### Here's a sneak peek at my todo list.
+![alt tag](https://raw.github.com/JonnShaft/ToDoList/master/todolist-the-jamals.herokuapp.com.jpg)
